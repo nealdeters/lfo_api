@@ -23,11 +23,23 @@ Or install it yourself as:
 #### Getting API results
 For all results, use the command:
 
-    $ api = LfoApi::Client.new.results
+    $ api = LfoApi::Client.new
+    $ api.results
 
 To search for a particular Job Title, use the command:
 
-    $ api = LfoApi::Client.new.search_jobs("police officer")
+    $ api = LfoApi::Client.new
+    $ api.search_jobs("police officer")
+
+To search for a particular Department, use the command:
+
+    $ api = LfoApi::Client.new
+    $ api.search_department("police")
+
+To search for a particular Annual Salary, use the command:
+
+    $ api = LfoApi::Client.new
+    $ api.search_employee_annual_salary("90744")
 
 ## Development
 
