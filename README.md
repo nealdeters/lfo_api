@@ -1,6 +1,6 @@
 # LFO API GEM
 
-A Ruby Wrapper for [LFO API](https://data.cityofchicago.org/resource/xzkq-xp2w.json)
+A Ruby Wrapper for [LFO API](http://not_real.com/customer_scoring)
 
 ## Installation
 
@@ -26,17 +26,29 @@ For all results, use the command:
     $ api = LfoApi::Client.new
     $ api.results
 
-Search for a particular Job Title:
+Search for customer score based on income:
 
-    $ api.search_jobs("police officer")
+    $ api.income("50000")
 
-Search for a particular Department:
+Search for customer score based on zipcode:
 
-    $ api.search_department("police")
+    $ api.zipcode("60201")
 
-Search for a particular Annual Salary:
+Search for customer score based on age:
 
-    $ api.search_employee_annual_salary("90744")
+    $ api.age("35")
+
+Search for customer score based on propensity:
+
+    $ api.propensity("0.26532")
+
+Search for customer score based on ranking:
+
+    $ api.ranking("C")
+
+Search for customer score based on income, zipcode, and age:
+
+    $ api.income_zipcode_age("50000","60201","35")
 
 ## Development
 

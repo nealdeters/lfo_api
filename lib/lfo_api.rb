@@ -5,7 +5,7 @@ module LfoApi
   class Client
 
     def initialize()
-      @url = "https://data.cityofchicago.org/resource/xzkq-xp2w.json"
+      @url = "http://not_real.com/customer_scoring"
     end
 
     def status
@@ -13,19 +13,38 @@ module LfoApi
     end
 
     def results
+      # example url path - http://not_real.com/customer_scoring
       Unirest.get(@url).body
     end
 
-    def search_jobs(job_title)
-      Unirest.get(@url + "?job_titles=" + job_title).body
+    def income(income)
+      # example url path - http://not_real.com/customer_scoring?income=50000
+      Unirest.get(@url + "?income=" + income).body
     end
 
-    def search_department(department)
-      Unirest.get(@url + "?department=" + department).body
+    def zipcode(zipcode)
+      # example url path - http://not_real.com/customer_scoring?zipcode=60201
+      Unirest.get(@url + "?zipcode=" + zipcode).body
     end
 
-    def search_employee_annual_salary(employee_annual_salary)
-      Unirest.get(@url + "?employee_annual_salary=" + employee_annual_salary).body
+    def age(age)
+      # example url path - http://not_real.com/customer_scoring?age=35
+      Unirest.get(@url + "?age=" + age).body
+    end
+
+    def propensity(propensity)
+      # example url path - http://not_real.com/customer_scoring?propensity=0.26532
+      Unirest.get(@url + "?propensity=" + propensity).body
+    end
+
+    def ranking(ranking)
+      # example url path - http://not_real.com/customer_scoring?ranking=C
+      Unirest.get(@url + "?ranking=" + ranking).body
+    end
+
+    def income_zipcode_age(income, zipcode, age)
+      # example url path - http://not_real.com/customer_scoring?income=50000&zipcode=60201&age=35
+      Unirest.get(@url + "?income=" + income + "&zipcode=" + zipcode + "&age=" + age).body
     end
   end
 end
