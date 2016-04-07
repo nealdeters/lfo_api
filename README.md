@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install thetvdb-ruby
+    $ gem install lfo_api
 
 ## Usage
 
@@ -27,7 +27,7 @@ For all results, use the command:
 
 To search for a particular Job Title, use the command:
 
-  $ api = LfoApi::Client.new.search_jobs("police officer")
+    $ api = LfoApi::Client.new.search_jobs("police officer")
 
 ## Development
 
@@ -37,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lfo_api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nealdeters/lfo_api.
 
 
 ## License
