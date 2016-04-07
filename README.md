@@ -1,7 +1,5 @@
 # LFO API GEM
 
-A Ruby Wrapper for [LFO API](http://not_real.com/customer_scoring)
-
 ## Installation
 
 Add this line to your application's Gemfile:
