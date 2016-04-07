@@ -26,17 +26,17 @@ For all results, use the command:
     $ api = LfoApi::Client.new
     $ api.results
 
-To search for a particular Job Title, use the command:
+Search for a particular Job Title:
 
     $ api = LfoApi::Client.new
     $ api.search_jobs("police officer")
 
-To search for a particular Department, use the command:
+Search for a particular Department:
 
     $ api = LfoApi::Client.new
     $ api.search_department("police")
 
-To search for a particular Annual Salary, use the command:
+Search for a particular Annual Salary:
 
     $ api = LfoApi::Client.new
     $ api.search_employee_annual_salary("90744")
