@@ -4,7 +4,7 @@ require 'unirest'
 module LfoApi
   class Client
     attr_accessor :url
-    validates :searchType, :value, presence: true
+    # validates :searchType, :value, presence: true
 
     def initialize()
       @url = "http://not_real.com/customer_scoring"
