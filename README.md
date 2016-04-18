@@ -48,6 +48,10 @@ Search for customer score based on income, zipcode, and age:
 
     $ api.income_zipcode_age("50000","60201","35")
 
+## Testing
+
+To run the test suite, run `rake spec`
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
