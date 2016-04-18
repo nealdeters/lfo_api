@@ -26,23 +26,23 @@ For all results, use the command:
 
 Search for customer score based on income:
 
-    $ api.income("50000")
+    $ api.search("income","50000")
 
 Search for customer score based on zipcode:
 
-    $ api.zipcode("60201")
+    $ api.search("zipcode","60201")
 
 Search for customer score based on age:
 
-    $ api.age("35")
+    $ api.search("age","35")
 
 Search for customer score based on propensity:
 
-    $ api.propensity("0.26532")
+    $ api.search("propensity","0.26532")
 
 Search for customer score based on ranking:
 
-    $ api.ranking("C")
+    $ api.search("ranking","C")
 
 Search for customer score based on income, zipcode, and age:
 
